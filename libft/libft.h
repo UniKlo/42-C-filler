@@ -6,7 +6,7 @@
 /*   By: khou <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 21:41:13 by khou              #+#    #+#             */
-/*   Updated: 2018/08/01 19:40:56 by khou             ###   ########.fr       */
+/*   Updated: 2018/10/10 23:04:00 by khou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,13 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <fcntl.h>
+# include <sys/types.h>
 
 # define BUFFER_SIZE 4096
+# define BUFF_SIZE 4000
+# define MAX_FD 4865
+
 
 typedef unsigned char	t_byte;
 
@@ -117,6 +122,8 @@ void					*ft_realloc(void *src, size_t srcsize, size_t newsize);
 char					*ft_strcjoin(char *delim, char **arr, size_t size);
 void					ft_printjoin(char *delim, char **arr, size_t size);
 int						ft_count_nbr_block(const char *str, char c);
+int						get_next_line(const int fd, char **line);
+
 
 /*
 ** List

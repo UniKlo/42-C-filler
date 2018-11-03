@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_nbr_block.c                               :+:      :+:    :+:   */
+/*   place.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: khou <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/30 16:20:37 by khou              #+#    #+#             */
-/*   Updated: 2018/08/02 20:11:22 by khou             ###   ########.fr       */
+/*   Created: 2018/10/23 14:32:22 by khou              #+#    #+#             */
+/*   Updated: 2018/10/23 15:49:32 by khou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include "../incl/filler.h"
 
-int	ft_count_nbr_block(const char *str, char c)
+int		*place()
 {
-	int	i;
-
-	i = 0;
-	while (*str == c)
-		str++;
-	while (*str)
-	{
-		while (*str && *str != c)
-			str++;
-		while (*str == c)
-			str++;
-		i++;
-	}
-	return (i);
+// all available spots;
+	if 
 }
